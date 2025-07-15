@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    -POST /products:
+    +Server trả về 200 OK.
+    +Response body có dữ liệu sản phẩm mới tạo, bao gồm cả id tự động sinh.
+    -GET /products:
+    Server trả về 200 OK.
+    Response body là mảng JSON các sản phẩm
+    -GET /products/{id}):
+    +200 OK hoặc 404 Not Found (tùy xử lý)
+    +Lấy sản phẩm theo ID thành công hoặc không tìm thấy sản phẩm
+    -PUT /products/{id}:
+    + 200 OK hoặc 404 Not Found (tùy xử lý)
+    +JSON sản phẩm đã cập nhật hoặc null
+    -DELETE /products/{id}:
+    +204 No Content
+    +Xóa sản phẩm thành công
+</div>
+</body>
+</html>
